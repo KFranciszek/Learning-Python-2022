@@ -6,10 +6,7 @@ def infoSYS ():
           "Machine: " + platform.processor()+'\n'
           "Node: " + platform.node()+ '\n'
           'System: ' + platform.system() +'\n'
-          
-            )
-
+          )
 
 
 infoSYS()
-
