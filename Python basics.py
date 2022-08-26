@@ -56,5 +56,20 @@ okres_trwania = 2
 fv = kwota_poczatkowa * (1+stopa_procentowa)** okres_trwania
 print(fv)
 
+## Approximation of a numerical result
+
+pi = 3.1415926535
+print(round(pi))
+
+## Breake the line
+print("%.2f"% pi)
+print("%.d"% pi)
+print("----------------------------------------\nWERSJA: 1.0.1\n----------------------------------------")
+print("========================================\nautor: jannowak@poczta.com\ndata: 01-01-2021\n========================================")
+
+## Separator and replace
+print("Python","Pool", sep='|')
+
+s = 'summer#time#holiday'
 
 
