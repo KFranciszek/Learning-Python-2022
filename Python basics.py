@@ -71,5 +71,6 @@ print("========================================\nautor: jannowak@poczta.com\ndat
 print("Python","Pool", sep='|')
 
 s = 'summer#time#holiday'
+print(s.replace("#", " "))
 
 
