@@ -73,4 +73,34 @@ print("Python","Pool", sep='|')
 s = 'summer#time#holiday'
 print(s.replace("#", " "))
 
+#%%
+list= ['sport','python','free','time']
+string_list_join = "#".join(list)
+print(string_list_join )
+#%%
+
+x = '123,785,45,5'
+l = x.split(',')
+print(l)
+
+
+#%%
+#Part 1
+
+#Ask the user for their name, and then greet them using the phrase "Hello, NAME". Of course, NAME should be replaced by the name they've given you!
+
+
+
+#Part 2
+
+#Ask the user for their age, and then print out how many months that is. You only need to print the number of months out.
+
+#Remember that for this you'll need to convert the user's input into a number by using int().
+
+ask_age = int(input("What is your age"))*12
+print (ask_age)
+#%%
+age_bolen1 = 34
+age_up = age_bolen1 > 31
+print (age_up)
 
