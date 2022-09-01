@@ -104,3 +104,49 @@ age_bolen1 = 34
 age_up = age_bolen1 > 31
 print (age_up)
 
+#%%
+age_bolen1 = 34
+age_up = age_bolen1 > 31
+print (age_up)
+#%%
+movies = [
+    ("Inside Out", 2015, True),
+    ("Toy Story 4", 2019, False),
+    ("Up", 2009, True)
+]
+
+print(True) 
+
+print(0 == "0") 
+
+print (0==0)
+
+
+a = [1, 2, 3]
+b = a
+c =[1, 2, 3] 
+print(id(a))  # 139685763327296
+print(id(b))  # 139685763327296
+
+print(a == b)  # True
+print(a is b)  # True
+
+#%%
+
+x = 0 or 35 
+z = 0 and 35
+print(x)
+print(z)
+#%%
+A = {1,2,3,4,5,6,7}
+B = {1,2,3,4}
+C= {6,7,}
+D={9}
+C.issubset(B)
+B.issubset(A)
+B.isdisjoint(C)
+C.issuperset(A)
+A.issuperset(C) 
+A.union(C,B,D)
+A.intersection(C)
+
