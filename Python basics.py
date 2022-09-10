@@ -201,11 +201,12 @@ from collections import Counter
 counter_list_test1 = Counter(list_test1)
 print(counter_list_test1)
 
+list_test4  = [1,1,1,1,2,2,3,4,5,6.5,"Sword","Car","Car"]   
 counter_list = {}
-for i in list_test1:
+for i in list_test4:
     if i not in counter_list :
         counter_list [i] = 0
-        counter_list [i] += 1
+    counter_list [i] += 1
 counter_list            
         
 
