@@ -158,9 +158,9 @@ b_tuple = ("Warsaw", "New Jork",1,3.56)
 mix_tuple = (a_tuple,b_tuple,"Python")
 mix_tuple2 = (mix_tuple,  ["Sword","Magic", 56])
 
-
+#%%List 
 print(dir(list))
-list_test1 = [1,2,3,4,4,5,5.5,"Python 3.10"]
+list_test1 = [1,1,2,3,4,4,5,5.5,"Python 3.10"]
 len(list_test1)
 list_test2 = list_test1 + ["Sword", 1,1,1,2,2]
 list_test3 = list_test2, ["SQL"]
@@ -169,4 +169,43 @@ list_test3[1]
 list_test1[0]
 list_test1[-1]
 list_test1[-2]
+numbers = [1,4,2,5]
+letters = ["d","s","f"]
+list_test5 = numbers + letters
+print(list_test5)
+numbers[0]
+print(numbers)
+numbers[0:4]
+numbers[::-1]
+numbers[0::3]
+list_test1.index("Python 3.10")
+ask_list = input("Do you no list?")
+list_test1.append(ask_list)
+print(list_test1)
+numbers.extend("dwa")
+numbers.extend([56.64])
+print(numbers)
+numbers.insert(0, "start_list")
+print(numbers)
+numbers.index(1)
+numbers.index(ask_list)
+list_test1.index(ask_list)
+list_test1.count(2)
+list_test1.count(4)
+
+for i in list_test1:
+        print(i,list_test1.count(i))
+   
+    
+from collections import Counter
+counter_list_test1 = Counter(list_test1)
+print(counter_list_test1)
+
+counter_list = {}
+for i in list_test1:
+    if i not in counter_list :
+        counter_list [i] = 0
+        counter_list [i] += 1
+counter_list            
+        
 
