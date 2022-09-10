@@ -150,3 +150,11 @@ A.issuperset(C)
 A.union(C,B,D)
 A.intersection(C)
 
+#%% tuple
+empty_tuple = tuple()
+print(empty_tuple)
+a_tuple = ('John', 'Robrt')
+b_tuple = ("Warsaw", "New Jork",1,3.56)
+mix_tuple = (a_tuple,b_tuple,"Python")
+mix_tuple2 = (mix_tuple,  ["Sword","Magic", 56])
+
