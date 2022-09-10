@@ -158,3 +158,15 @@ b_tuple = ("Warsaw", "New Jork",1,3.56)
 mix_tuple = (a_tuple,b_tuple,"Python")
 mix_tuple2 = (mix_tuple,  ["Sword","Magic", 56])
 
+
+print(dir(list))
+list_test1 = [1,2,3,4,4,5,5.5,"Python 3.10"]
+len(list_test1)
+list_test2 = list_test1 + ["Sword", 1,1,1,2,2]
+list_test3 = list_test2, ["SQL"]
+list_test3[0]
+list_test3[1]
+list_test1[0]
+list_test1[-1]
+list_test1[-2]
+
