@@ -208,5 +208,51 @@ for i in list_test4:
         counter_list [i] = 0
     counter_list [i] += 1
 counter_list            
-        
+     
+#%% Dictinary 
+
+empty_dic1 = dict()
+emoty_dic2 = {}
+empty_dic1 = dict()
+emoty_dic2 = {}
+pol_to_end = {"jeden":"one", "dwa":"two","trzy":"Three"}
+empty_dict1 = dict()
+emoty_dict2 = {}
+pol_to_end = {"jeden":"one", "dwa":"two","trzy":"Three"}
+test_dict1 = {"jeden":1, "dwa":2,"trzy":3}
+test_dict1 = {"jeden":1, "dwa":2,"trzy":3, "pięc":5}
+len(test_dict1)
+dir(dict())
+test_dict1["Cztery"] = "four"
+test_dict1["Cztery"] = 4
+test_dict1["jeden"]
+pol_to_end.clear()
+test_dict1.keys()
+test_dict1.values()
+list(test_dict1.keys())
+test_dict1.items()
+test_dict1.get("jeden", "NaN")
+test_dict1.get("zero", "NaN")
+test_dict1.pop("pięć")
+test_dict1 = {"jeden":1, "dwa":2,"trzy":3, "pięc":5}
+test_dict1.pop("pięć")
+test_dict1["Cztery"] = 4
+test_dict1.pop("pięć")
+print(test_dict1)
+test_dict1.pop("pięć")
+print(test_dict1)
+
+test_dict1.pop("pięc")
+capitals = {'Polska': 'Warszawa', 'Niemcy': 'Berlin', 'Czechy': 'Praga'}
+capitals.update("Włochy","Rzym")
+capitals["Włochy"] = "Rzym"
+capitals["Włochy"] = "Rzym"
+capitals_list = list(capitals)
+capitals_list = list(capitals.items())
+capitals_list.sort()
+print(capitals_list.sort())
+capitals_list = sorted(list(capitals.items()))
+print(capitals_list)
+capitals_list_v = sorted(list(capitals.values())) 
+
 
