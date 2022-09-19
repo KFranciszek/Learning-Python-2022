@@ -255,4 +255,81 @@ capitals_list = sorted(list(capitals.items()))
 print(capitals_list)
 capitals_list_v = sorted(list(capitals.values())) 
 
+#%%Logical values  / terms and conditions   
+True or True
+True or False
+False or True
+False or False
+True and False
+bool(" ")
+bool("")
+bool("1")
+bool(["", ''])
 
+if 8 > 10:
+    print("NO")
+
+
+if 8 < 10 :
+    print("YES")
+    
+a = 28 
+if a > 15:
+    print ("a more that 15")
+else: 
+    print("a less then 15")
+
+ageIF = int(input("Whats your age "))
+    
+if ageIF == 18:
+    print("You are 18")
+elif ageIF < 18:
+    print("You are young")
+elif ageIF > 50:
+    print("You are old")
+
+#%%
+
+print("Tap correct PIN")
+pin= int(input("What is PIN "))
+
+if pin == 21:
+    print ("PIN is correct")
+elif pin >= 100:
+    print ("Tap max two number PIN")
+else:
+    print("Wrong PIN")
+#%%
+number_if = 10
+if number_if:
+    print("NO 0 number")
+else:
+    print("0 number")
+    
+#%%
+
+credit_flag = False
+
+if credit_flag:
+    print("Show credit")
+else:
+    print("You dont have credit")
+
+#%%
+
+fakt = 'python jest łatwy i przyjemny'
+fakt_list = list(fakt)
+fakt_list_set = set(fakt_list)
+
+if len(fakt_list_set) < 20:
+    print("Mniej niż 20 unikalnych znaków.")
+else: 
+    print("Liczba unikalnych znaków jest większa lub równa 20.")
+#%% 
+
+text = 'sfdvjklncdnskjccbnksjdnckjsdsnckjnsdkjnckjsnkjlcnqdlknwsx'
+
+if "q" in text:
+    print("includes")
+else:
+    print("not includes")
