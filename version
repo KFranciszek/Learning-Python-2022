@@ -8,9 +8,9 @@ Start
 End
 -Display of result
 -Save to database
+---------------------------------------------------
 
 BMI v2
-
 Start
 -Gender selection 
 -Filling in the age field
@@ -23,9 +23,10 @@ End
 
 Other
 -Service for BMI history 
+------------------------------------------------------
+
 
 BMI v3
-
 Account creation
 -Log in 
 -Create an account
@@ -42,6 +43,8 @@ End
 
 Other
 -Service for BMI history 
+-------------------------------------------------
+
 
 BMI v4
 
