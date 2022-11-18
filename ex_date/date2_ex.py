@@ -8,3 +8,12 @@
 #g) Day of the month
 #h) Day of week
 
+import datetime
+from datetime import date
+
+a = datetime.datetime.now()
+b = date.today()
+c = date.today()
+#d=  date.weekday()
+e=  date.day
+print(a,b.year,c.month, end="\n")
