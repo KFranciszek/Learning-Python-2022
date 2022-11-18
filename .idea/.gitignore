@@ -2,5 +2,7 @@
 /shelf/
 /workspace.xml
 .idea/
-.venv/ 
-
+.venv/
+/vcs.xml
+/PycharmProjects.iml
+/modules.xml
