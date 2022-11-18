@@ -8,7 +8,6 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna eli
        "Vestibulum quis posuere nisi, vel posuere neque. " \
        "Ut nec mollis augue. Nam pharetra mi et leo ultricies scelerisque. " \
        "Donec elit augue, ullamcorper ac ultrices non, mollis et lectus. Nunc placerat ornare diam, sit amet vestibulum ex ornare quis."
-
 #1
 text_l = text.split()
 counter = {}
