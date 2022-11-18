@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HackApp-Python/.idea/HackApp-Python.iml" filepath="$PROJECT_DIR$/../HackApp-Python/.idea/HackApp-Python.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/.idea/PycharmProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python3/.idea/Python3.iml" filepath="$PROJECT_DIR$/../Python3/.idea/Python3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_BMI_APP/.idea/Python_BMI_APP.iml" filepath="$PROJECT_DIR$/../Python_BMI_APP/.idea/Python_BMI_APP.iml" />
     </modules>
   </component>
 </project>
