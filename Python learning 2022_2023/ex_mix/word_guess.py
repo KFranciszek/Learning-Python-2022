@@ -3,7 +3,7 @@
 import random
 words = ['cat', 'dog', 'house','love', 'computer']
 print('Zacznijmy grę w zgadywanie słów')
-i=random.choice(words)
+i= random.choice(words)
 proby = 5
 guese = True
 while True:
@@ -37,7 +37,7 @@ while True:
 import random
 words = ['cat', 'dog', 'house','love', 'computer']
 print('Zacznijmy grę w zgadywanie słów')
-i=random.choice(words)
+i= random.choice(words)
 proby = 5
 guese = True
 while True:

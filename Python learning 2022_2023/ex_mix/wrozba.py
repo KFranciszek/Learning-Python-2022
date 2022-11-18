@@ -7,7 +7,7 @@
 import random
 print("Witaj w aplikacji wróżba")
 print("Wylosuj dla siebie unikalną wróżbę")
-wrozba = random.randint(1,5)
+wrozba = random.randint(1, 5)
 if wrozba == 1:
     print("To twój dzień dziś odezwie się do Ciebie miłość")
 elif wrozba ==2:

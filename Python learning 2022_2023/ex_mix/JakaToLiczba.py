@@ -9,7 +9,7 @@ licznik = True
 while licznik:
 
     import random
-    liczba = random.randint(1,100)
+    liczba = random.randint(1, 100)
     print ("Zgadnij liczbę w przedziała 1-100")
     odp = input("Wylosowana liczba to: ")
     if odp == liczba:
@@ -21,7 +21,7 @@ while licznik:
 licznik = True
 while licznik:
     import random
-    liczba = random.randint(1,100)
+    liczba = random.randint(1, 100)
     print ("Zgadnij liczbę w przedziała 1-100")
     odp = input("Wylosowana liczba to: ")
     licznik += 1
