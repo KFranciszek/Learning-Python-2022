@@ -6,14 +6,16 @@
 #e) Weekday of the week
 #f) Day of year
 #g) Day of the month
-#h) Day of week
-
-import datetime
+#h) Day of weekimport datetime
 from datetime import date
+from datetime import datetime
 
-a = datetime.datetime.now()
+a = datetime.now()
 b = date.today()
 c = date.today()
-#d=  date.weekday()
-e=  date.day
-print(a,b.year,c.month, end="\n")
+d=  datetime.now().strftime("%W")
+e=  datetime.now().strftime("%A")
+f = datetime.now().strftime("%j")
+g = datetime.now().strftime("%d")
+print(a,b.year,c.month,d,e,f,g)
+
