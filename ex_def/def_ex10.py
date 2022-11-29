@@ -5,3 +5,14 @@ def average_numbers(*args):
     return  sum(args) / len(args)
 
 print(average_numbers(2,2,2,5,6,7,8,44,643))
+
+
+#2
+
+def average_numbers(*args):
+    return  sum(args) / len(args)
+
+ans = round(average_numbers(2,2,2,5,6,7,8,44,643),2)
+print(ans)
+
+
