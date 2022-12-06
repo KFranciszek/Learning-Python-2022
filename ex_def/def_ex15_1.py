@@ -21,17 +21,19 @@ print("Operation symbol -\n" \
       "3. Multiply\n" \
       "4. Divide\n")
 
+
+operation_list = [1,2,3,4]
 operation = int(input("Chose the operation: "))
 number1 = float(input("Enter number 1: "))
 number2 = float(input("Enter number 2: "))
 
-if operation == 1:
+if  operation == 1  in operation_list:
     print(f_add(number1,number2))
-elif operation == 2:
+elif operation == 2  in operation_list:
     print(f_sub(number1, number2))
-elif operation == 3:
+elif operation == 3 in operation_list:
     print(f_multi(number1, number2))
-elif operation == 4:
+elif operation == 4 in operation_list:
     print(f_divi(number1, number2))
 else:
-    print("Error")
+    print("Error, chose wrog id operation")
