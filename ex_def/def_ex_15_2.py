@@ -2,6 +2,9 @@
 # subtract, divide, or multiply these numbers. Perform the chosen operation on the values,
 # showing the operation being performed. Write four functions, one for each mathematical operation.
 #Example: add(), subtract(), Multiply(), and Divide()
+
+#in WORK
+
 global score
 score =0
 
@@ -16,6 +19,10 @@ def f_multi (number1,number2):
 
 def f_divi (number1,number2):
     return number1/number2
+
+
+
+def f_if_cal ():
 
 
 def f_cal_loop():
