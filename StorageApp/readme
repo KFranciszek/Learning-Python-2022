@@ -1,0 +1,10 @@
+A simple store inventory type application
+V1
+-addProduct to txt file
+-list all product
+-delete product
+
+V2
+-addProduct,price and  amount of products to JSON
+-delete product and blan lines
+-update price and amount product
