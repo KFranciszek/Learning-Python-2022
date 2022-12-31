@@ -3,6 +3,8 @@
 # showing the operation being performed. Write four functions, one for each mathematical operation.
 #Example: add(), subtract(), Multiply(), and Divide()
 
+import sys
+
 def f_add (number1,number2):
     return number1+number2
 
@@ -21,9 +23,28 @@ print("Operation symbol -\n" \
       "3. Multiply\n" \
       "4. Divide\n")
 
-operation = int(input("Chose the operation: "))
-number1 = float(input("Enter number 1: "))
-number2 = float(input("Enter number 2: "))
+try:
+    operation = int(input("Chose the operation: "))
+    if operation > 4:
+        print("Wrong context of operation ")
+        sys.exit(1)
+except ValueError:
+    print("Must be int ")
+    sys.exit(1)
+
+#
+try:
+    number1 = float(input("Enter number 1: "))
+except ValueError:
+    print("Must be float.Please enter a valid float for the first number ")
+    sys.exit(1)
+
+
+try:
+    number2 = float(input("Enter number 2: "))
+except ValueError:
+    print("Must be float. Please enter a valid float for the second number ")
+    sys.exit(1)
 
 if operation == 1:
     print(f_add(number1,number2))
