@@ -53,6 +53,10 @@ elif operation == 2:
 elif operation == 3:
     print(f_multi(number1, number2))
 elif operation == 4:
-    print(f_divi(number1, number2))
+    try:
+        print(f_divi(number1, number2))
+    except ZeroDivisionError:
+        print("Cannot divide by 0. Please enter a different number for number 2.")
+
 else:
     print("Error")
