@@ -1,6 +1,6 @@
 import  json
 def delete_product():
-    update_select = input("What product you want  delete: ")
+    delete_select = input("What product you want  delete: ")
 
     try:
         with open("prod_list.json", 'r') as f:
@@ -19,7 +19,7 @@ def delete_product():
     found = False
     delete = ""
     for i in data_search:
-        if i["name"] == update_select:
+        if i["name"] == delete_select:
             delete= (input(f"Are you sure you want to remove {i}  ? "))
             found = True
             if delete == "yes":
