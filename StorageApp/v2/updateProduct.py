@@ -22,14 +22,16 @@ def update_product():
     value_upadate = ""
     for i in data_search:
         if i["name"] == update_select:
-            update= input(f"Are you sure you want to remove {i}  ? ")
+            update= input(f"Are you sure you want to update {i}  ? ")
             found = True
             if update == "yes":
                 fild_update_i = input("Witch fild update:? ")
                 if fild_update_i  in fild_update:
                     value_upadate = input("Enter new value: ")
                     i[fild_update_i] = value_upadate
-                    print(i)
+                    print("Value update: ",i)
+                else:
+                    print("Key not in base")
 
     with open("prod_list.json", 'w') as f:
         json.dump(data_search, f)
