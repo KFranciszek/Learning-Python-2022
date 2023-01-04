@@ -8,3 +8,9 @@ V2
 -addProduct,price and  amount of products to JSON
 -delete product and blan lines
 -update price and amount product
+
+V3
+-code refactoring
+-combining update and delete methods
+-optimization of load_data
+-adding new exception handling
