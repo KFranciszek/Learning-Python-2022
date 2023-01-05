@@ -1,11 +1,9 @@
 import  json
-def delete_product():
-    delete_select = input("What product you want  delete: ")
-
+import  sys
+def search_product():
+    search_select = input("What product you looking: ")
     try:
         with open("prod_list.json", 'r') as f:
-
-
             data_open = f.read()
             data_search = json.loads(data_open)
 
@@ -23,18 +21,17 @@ def delete_product():
 
 
     found = False
-    delete = ""
+    search_list = []
+
     for i in data_search:
-        if i["name"] == delete_select:
-            delete= (input(f"Are you sure you want to remove {i}  ? "))
+        if i["name"] == search_select:
+            search_list.append(i)
             found = True
-            if delete == "yes":
-               data_search.remove(i)
-    with open("prod_list.json", 'w') as f:
-        json.dump(data_search,f)
+    if  len(search_list) >= 1:
+        print(search_list)
+
 
     if not found:
        print("Product dont found")
 
 
-delete_product()

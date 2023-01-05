@@ -15,6 +15,10 @@ class changeProducts():
         except  ValueError:  # includes simplejson.decoder.JSONDecodeError
             print('Decoding JSON has failed')
 
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            sys.exit(1)
+
     # Method to update or delete product
     def change_product(self):
         self.change_option = ['delete','update']
