@@ -14,3 +14,7 @@ V3
 -combining update and delete methods
 -optimization of load_data
 -adding new exception handling
+
+V4
+-code refactoring
+-abandoning saving products to Json files in favor of a database
