@@ -18,8 +18,6 @@ def dubel():
         print(f"An error occurred: {e}")
         sys.exit(1)
 
-
-
     count_dic = {}
     count = 0
 
