@@ -12,7 +12,7 @@ def addProduct():
         barcode = ''.join(name + "_" + str(random.randint(10000,99999)))
         cursor.execute('INSERT INTO products (name,price,amount,barcode) VALUES (?,?,?,?)',(name,price,amount,barcode))
     else:
-        print("Product on the list")
+        print("Product duble on the list")
 
     conn.commit()
     conn.close()
