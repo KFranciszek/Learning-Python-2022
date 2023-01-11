@@ -18,3 +18,7 @@ V3
 V4
 -code refactoring
 -abandoning saving products to Json files in favor of a database
+
+v5
+-code refactoring
+-add Classes
