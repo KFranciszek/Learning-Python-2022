@@ -36,6 +36,33 @@ class StorageProducts(dataBases):
             else:
                 self.conn.close()
 
+
+
+    def update_product(self,barcode,name=None,price=None,amount=None):
+        self.cursor.execute(f'SELECT * FROM products WHERE barcode = "{barcode}"')
+        up_product=self.cursor.fetchall()
+        if len(up_product) == 1:
+            if name:
+                self.cursor.execute(f'UPDATE products SET name = "{name}" WHERE barcode = "{barcode}"')
+                self.cursor.fetchall()
+                self.conn.commit()
+                self.conn.close()
+
+            if  price:
+                self.cursor.execute(f'UPDATE products SET price = "{price}" WHERE barcode = "{barcode}"')
+                self.cursor.fetchall()
+                self.conn.commit()
+                self.conn.close()
+
+            if  amount:
+                self.cursor.execute(f'UPDATE products SET amount = "{amount}" WHERE barcode = "{barcode}"')
+                self.cursor.fetchall()
+                self.conn.commit()
+                self.conn.close()
+        else:
+            print("Product dont exist")
+            exit()
+
     def delete_product(self,barcode):
         self.cursor.execute(f'Delete FROM products WHERE barcode = "{barcode}"')
         self.conn.commit()
@@ -56,8 +83,13 @@ class StorageProducts(dataBases):
             print(self.record)
 
 
-
-
-storage_product = StorageProducts()
-storage_product.add_product("Mars baton",2.6,580)
+    def search_product(self,search_field=None,search_value=None):
+        if search_field not in ['name','price','amount','barcode']:
+            print("Field dont exist")
+            return
+        self.cursor.execute(f"SELECT * FROM products WHERE {search_field} = '{search_value}'")
+        search_result = self.cursor.fetchall()
+        print(search_result)
+        self.conn.commit()
+        self.conn.close()
 
