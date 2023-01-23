@@ -1,5 +1,5 @@
 import random
-from StorageApp.v5.dataBase_def import dataBases
+from StorageApp.v6.dataBase_def import dataBases
 
 class StorageProducts(dataBases):
 
