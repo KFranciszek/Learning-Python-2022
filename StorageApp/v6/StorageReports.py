@@ -1,5 +1,4 @@
-from StorageApp.v5.dataBase_def import dataBases
-
+from StorageApp.v6.dataBase_def import dataBases
 class StorageReports(dataBases):
     def __init__(self):
         self.base='databse_storage.db'

@@ -1,6 +1,5 @@
 import random
 from StorageApp.v6.dataBase_def import dataBases
-
 class StorageProducts(dataBases):
 
     def __init__(self):
